@@ -7,33 +7,87 @@
 .orgchart td>.down {
   background-color: #aaa;
 }
-.orgchart .middle-level .title {
-  background-color: #006699;
+.orgchart .admin .title {
+  background-color: #E80CA6;
 }
-.orgchart .middle-level .content {
-  border-color: #006699;
+.orgchart .admin .content {
+  border-color: #E80CA6;
 }
-.orgchart .product-dept .title {
+.orgchart .adminteam .title {
   background-color: #009933;
 }
-.orgchart .product-dept .content {
+.orgchart .adminteam .content {
   border-color: #009933;
 }
-.orgchart .rd-dept .title {
+.orgchart .tech .title {
   background-color: #993366;
 }
-.orgchart .rd-dept .content {
+.orgchart .tech .content {
   border-color: #993366;
 }
-.orgchart .pipeline1 .title {
+.orgchart .techteam .title {
+  background-color: #0CE8CE;
+}
+.orgchart .techteam .content {
+  border-color: #0CE8CE;
+}
+.orgchart .cases .title {
+  background-color: #5CF205;
+}
+.orgchart .cases .content {
+  border-color: #5CF205;
+}
+.orgchart .casesteam .title {
+  background-color: #F22405;
+}
+.orgchart .casesteam .content {
+  border-color: #F22405;
+}
+.orgchart .finance .title {
+  background-color: #006699;
+}
+.orgchart .finance .content {
+  border-color: #006699;
+}
+.orgchart .financeteam .title {
+  background-color: #009933;
+}
+.orgchart .financeteam .content {
+  border-color: #009933;
+}
+.orgchart .outreach .title {
+  background-color: #8FED2B;
+}
+.orgchart .outreach .content {
+  border-color: #8FED2B;
+}
+.orgchart .outreachteam .title {
   background-color: #996633;
 }
-.orgchart .pipeline1 .content {
+.orgchart .outreachteam .content {
   border-color: #996633;
 }
-.orgchart .frontend1 .title {
+.orgchart .legal .title {
+  background-color: #0AD15D;
+}
+.orgchart .legal .content {
+  border-color: #0AD15D;
+}
+.orgchart .legalteam .title {
   background-color: #cc0066;
 }
-.orgchart .frontend1 .content {
+.orgchart .legalteam .content {
+  border-color: #cc0066;
+}
+.orgchart .media .title {
+  background-color: #05D3F2;
+}
+.orgchart .media .content {
+  border-color: #05D3F2;
+}
+.orgchart .mediateam .title {
+  background-color: #cc0066;
+}
+.orgchart .mediateam .content {
   border-color: #cc0066;
 }

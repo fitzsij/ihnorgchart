@@ -8,46 +8,46 @@
       'name': 'Irish Housing Network',
       'title': 'irishhousingnetwork@gmail.com',
       'children': [
-        { 'name': 'Admin', 'title': 'contact', 'className': 'middle-level',
+        { 'name': 'Admin', 'title': 'contact', 'className': 'admin',
           'children': [
-            { 'name': 'Samantha', 'title': 'contact', 'className': 'product-dept' },
-            { 'name': 'Natalia', 'title': 'contact', 'className': 'product-dept'}
+            { 'name': 'Samantha', 'title': 'contact', 'className': 'adminteam' },
+            { 'name': 'Natalia', 'title': 'contact', 'className': 'adminteam'}
           ]
         },
-        { 'name': 'Media', 'title': 'contact', 'className': 'middle-level',
+        { 'name': 'Media', 'title': 'contact', 'className': 'media',
           'children': [
-            { 'name': 'Rosi', 'title': 'contact', 'className': 'product-dept' },
-            { 'name': 'Thomas', 'title': 'contact', 'className': 'product-dept'}
+            { 'name': 'Rosi', 'title': 'contact', 'className': 'mediateam' },
+            { 'name': 'Thomas', 'title': 'contact', 'className': 'mediateam'}
           ]
         },
-        { 'name': 'Cases', 'title': 'contact', 'className': 'middle-level',
+        { 'name': 'Cases', 'title': 'contact', 'className': 'cases',
           'children': [
-            { 'name': 'Seamus', 'title': 'contact', 'className': 'product-dept' },
-            { 'name': 'David', 'title': 'contact', 'className': 'product-dept'}
+            { 'name': 'Seamus', 'title': 'contact', 'className': 'casesteam' },
+            { 'name': 'David', 'title': 'contact', 'className': 'casesteam'}
           ]
         },
-        { 'name': 'Finance', 'title': 'contact', 'className': 'middle-level',
+        { 'name': 'Finance', 'title': 'contact', 'className': 'finance',
           'children': [
-            { 'name': 'Oisin', 'title': 'contact', 'className': 'product-dept' },
-            { 'name': 'Liz', 'title': 'contact', 'className': 'product-dept'}
+            { 'name': 'Oisin', 'title': 'contact', 'className': 'financeteam' },
+            { 'name': 'Liz', 'title': 'contact', 'className': 'financeteam'}
           ]
         },
-        { 'name': 'Outreach', 'title': 'contact', 'className': 'middle-level',
+        { 'name': 'Outreach', 'title': 'contact', 'className': 'outreach',
           'children': [
-            { 'name': 'Alan', 'title': 'contact', 'className': 'product-dept' },
-            { 'name': 'Aisling', 'title': 'contact', 'className': 'product-dept'}
+            { 'name': 'Alan', 'title': 'contact', 'className': 'outreachteam' },
+            { 'name': 'Aisling', 'title': 'contact', 'className': 'outreachteam'}
           ]
         },
-        { 'name': 'Legal', 'title': 'contact', 'className': 'middle-level',
+        { 'name': 'Legal', 'title': 'contact', 'className': 'legal',
           'children': [
-            { 'name': 'Michelle', 'title': 'contact', 'className': 'product-dept' },
-            { 'name': 'Anne', 'title': 'contact', 'className': 'product-dept'}
+            { 'name': 'Michelle', 'title': 'contact', 'className': 'legalteam' },
+            { 'name': 'Anne', 'title': 'contact', 'className': 'legalteam'}
           ]
         },
-        { 'name': 'Tech', 'title': 'contact', 'className': 'middle-level',
+        { 'name': 'Tech', 'title': 'contact', 'className': 'tech',
           'children': [
-            { 'name': 'Paul', 'title': 'contact', 'className': 'rd-dept' },
-            { 'name': 'Jules', 'title': 'contact', 'className': 'rd-dept'}
+            { 'name': 'Paul', 'title': 'contact', 'className': 'techteam' },
+            { 'name': 'Jules', 'title': 'contact', 'className': 'techteam'}
           ]
         }
       ]
@@ -55,7 +55,11 @@
 
     $('#chart-container').orgchart({
       'data' : datascource,
-      'nodeContent': 'title'
+      'direction': 'l2r',
+      'nodeContent': 'title',
+      'createNode': function($node, data) {
+        $node.children('.content').html('<img src="img/ulrike.jpg" width="100%" height="100%">');
+      }
     });
 
   });
